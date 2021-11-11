@@ -62,8 +62,8 @@ Here are the accepted parameters :
 | delaySeconds  | Duration | Duration(seconds:1)  | Delay between two animating seconds (Regardless animation duration) | 
 | animationDuration  | Duration | Duration(seconds:1)  | Animated switch's duration of every second| 
 | scaleTransition  | bool | false | If true, animation type is scaling. Else, it is fading | 
-| textStyle  | TextStyle | null | Function called after countdown completed | 
-| onCompleted (Optional)  | VoidCallback | null | Triangle's side color | 
+| textStyle  | TextStyle | null | Digit textstyle | 
+| onCompleted (Optional)  | VoidCallback | null | Function called after countdown completed | 
 | eliminate  | bool | false | Eliminate zero digit after countdown completed | 
 
 
