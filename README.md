@@ -72,7 +72,18 @@ Here are the accepted parameters :
 
 ## example
 
-<img src="assets/opac.gif" width="300" height="600">
+| Opac  | Scale | 
+| ------------- | ------------- | 
+| <img src="assets/opac.gif" width="250" height="200">  |  <img src="assets/scale.gif" width="200" height="200"> | 
+
+
+
+
+
+
+
+
+
 
 
 
