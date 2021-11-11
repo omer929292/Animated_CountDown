@@ -70,7 +70,7 @@ Here are the accepted parameters :
 
 ## example
 
-| Opac  | Scale | 
+| Opacity  | Scale | 
 | ------------- | ------------- | 
 | <img src="assets/opac.gif" width="250" height="200">  |  <img src="assets/scale.gif" width="200" height="200"> | 
 
