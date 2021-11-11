@@ -60,7 +60,7 @@ Here are the accepted parameters :
 
 
 | Name  | Type | Default Value | Description | 
-| ------------- | --------------- | ------------- | ------------- | 
+| ------------- | --------------- | ----------------------- | ------------- | 
 | userSeconds  | int | null | Number of seconds to countdown | 
 | delayInitial  | Duration | Duration(seconds: 3) | Delay before countdown starts |
 | delaySeconds  | Duration | Duration(seconds: 1) | Delay between two animating seconds (Regardless animation duration) | 
