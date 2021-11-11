@@ -33,20 +33,18 @@ Make a countdown animation.
 ## Usage
 
 ```
-  AnimatedCountDown countDown(){
-    return AnimatedCountDown(
-      userSeconds: 5,
-      delayInitial: Duration(seconds: 10),
-      delaySeconds: Duration(seconds: 1),
-      animationDuration: Duration(seconds: 1),
-      scaleTransition: false,
-      textStyle: GoogleFonts.assistant(fontWeight:FontWeight.bold,fontSize: 100,color: Colors.purple),
-      onCompleted: (){
-      setState(() {print("Omer!");});
-      },
-      eliminate: false,
-    );
-  }
+AnimatedCountDown(
+        userSeconds: 5,
+        delayInitial: Duration(seconds: 5),
+        delaySeconds: Duration(seconds: 1),
+        animationDuration: Duration(seconds: 1),
+        scaleTransition: false,
+        textStyle: TextStyle(fontWeight:FontWeight.bold,fontSize: 100,color: Colors.purple),
+        onCompleted: (){
+            print("Finished!");
+        },
+        eliminate: false,
+      );
 ```
 
 
