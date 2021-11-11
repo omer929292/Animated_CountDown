@@ -60,11 +60,11 @@ Here are the accepted parameters :
 
 
 | Name  | Type | Default Value | Description | 
-| ------------- | ------------- | ------------- | ------------- | 
+| ------------- | --------------- | ------------- | ------------- | 
 | userSeconds  | int | null | Number of seconds to countdown | 
-| delayInitial  | Duration | Duration(seconds: 3)         | Delay before countdown starts |
-| delaySeconds  | Duration | Duration(seconds: 1)         | Delay between two animating seconds (Regardless animation duration) | 
-| animationDuration  | Duration | Duration(seconds: 1)    | Animated switch's duration of every second| 
+| delayInitial  | Duration | Duration(seconds: 3) | Delay before countdown starts |
+| delaySeconds  | Duration | Duration(seconds: 1) | Delay between two animating seconds (Regardless animation duration) | 
+| animationDuration  | Duration | Duration(seconds: 1) | Animated switch's duration of every second| 
 | scaleTransition  | bool | false | If true, animation type is scaling. Else, it is fading | 
 | textStyle  | TextStyle | null | Function called after countdown completed | 
 | onCompleted (Optional)  | VoidCallback | null | Triangle's side color | 
