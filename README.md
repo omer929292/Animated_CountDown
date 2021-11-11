@@ -44,8 +44,9 @@ Make a countdown animation.
       onCompleted: (){
           setState(() {
             print("Omer!");
-          });
-      },
+            }
+            );
+            },
       eliminate: false,
     );
   }
