@@ -42,11 +42,8 @@ Make a countdown animation.
       scaleTransition: false,
       textStyle: GoogleFonts.assistant(fontWeight:FontWeight.bold,fontSize: 100,color: Colors.purple),
       onCompleted: (){
-          setState(() {
-            print("Omer!");
-            }
-            );
-            },
+      setState(() {print("Omer!");});
+      },
       eliminate: false,
     );
   }
