@@ -12,41 +12,39 @@ and the Flutter guide for
 -->
 
 
-## Animated_Window
+## Animated_Countdown
 
-Make an animated window.
+Make a countdown animation.
 
 
 ## Features
 
-* Make an animated window
-* Set height, width and color to window
-* set a border to window as well as its width, color and radius
-* Set a position within scaffold using alignment
-* Set animation type (Sizing or scaling)
-* Set duration to animation
-* Add items to the window by using child property. Control their position within the window using Stack, Row, etc...
-* Open and close the window by manipulating isReverse property
+* Make a countdown animation
+* Set seconds to countdown
+* Set delay to countdown
+* Set delay between two animating seconds (Regardless animation duration)
+* Set animated switch duration of every second
+* Set animation type (Scaling or fading)
+* Set textstyle to digits
+* Set a function to be called after countdown completed
+* Eliminate zero digit after countdown completed
 
 
 ## Usage
 
 ```
-Animated_Window(
-      height: 200,
-      width: MediaQuery.of(context).size.width,
-      color: Colors.purple,
-      borderColor: Colors.black,
-      borderWidth: 5,
-      borderRadius: BorderRadius.only(topLeft:Radius.circular(30) ,topRight:Radius.circular(30) ,bottomLeft:Radius.circular(0) ,bottomRight:Radius.circular(0)),
-      alignment: Alignment.bottomCenter,
-      animationDuration: Duration(seconds: 1),
-      isReverse: false,
-      scale: false,
-      child: Center(child: Text("Window"),
-      ),
-    );
-
+AnimatedCountDown(
+        userSeconds: 5,
+        delayInitial: Duration(seconds: 5),
+        delaySeconds: Duration(seconds: 1),
+        animationDuration: Duration(seconds: 1),
+        scaleTransition: false,
+        textStyle: TextStyle(fontWeight:FontWeight.bold,fontSize: 100,color: Colors.purple),
+        onCompleted: (){
+            print("Finished!");
+        },
+        eliminate: false,
+      );
 ```
 
 
@@ -59,24 +57,20 @@ Here are the accepted parameters :
 
 | Name  | Type | Default Value | Description | 
 | ------------- | ------------- | ------------- | ------------- | 
-| height  | double | null | Window's height | 
-| width  | double | null  | Window's width |
-| color  | Color | null  | Window's color  | 
-| borderColor  | Color | Colors.transparent  | Width of window's border| 
-| borderWidth  | double | 0 | Width of window's border| 
-| borderRadius  | BorderRadius | BorderRadius.zero | Radius of window's border| 
-| child | Widget | null | Window's content | 
-| animationDuration  | Duration | Duration(seconds: 1) | Duration of animated opening and closing | 
-| isReverse  | bool | false | Is animation reverse (False=open, true=close)| 
-| alignment  | Alignment | Alignment(0,0) | Window's position within scaffold | 
-| scale | bool | false | If true, animation type is scaling. Else, it is sizing. | 
-
+| userSeconds  | int | null | Number of seconds to countdown | 
+| delayInitial  | Duration | Duration(seconds:3)  | Delay before countdown starts |
+| delaySeconds  | Duration | Duration(seconds:1)  | Delay between two animating seconds (Regardless animation duration) | 
+| animationDuration  | Duration | Duration(seconds:1)  | Animated switch's duration of every second| 
+| scaleTransition  | bool | false | If true, animation type is scaling. Else, it is fading | 
+| textStyle  | TextStyle | null | Function called after countdown completed | 
+| onCompleted (Optional)  | VoidCallback | null | Triangle's side color | 
+| eliminate  | bool | false | Eliminate zero digit after countdown completed | 
 
 
 
 ## example
 
-| Opacity  | Scale | 
+| Opac  | Scale | 
 | ------------- | ------------- | 
 | <img src="assets/opac.gif" width="250" height="200">  |  <img src="assets/scale.gif" width="200" height="200"> | 
 
